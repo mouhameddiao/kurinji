@@ -1,0 +1,140 @@
+/* Outfits.css */
+.outfits {
+  width: 100%;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.relative {
+  position: relative;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn.left {
+  left: -20px;
+}
+
+.nav-btn.right {
+  right: -20px;
+}
+
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .product-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-card .product-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+  animation: slideIn 1s ease-out;
+  position: relative;
+}
+#categories-dropdown::before {
+  content: '▼';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+}
+
+#categories-dropdown.hidden::before {
+  content: '►';
+  right: 12px;
+}

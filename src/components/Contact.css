@@ -1,0 +1,33 @@
+.contact {
+  padding: 20px;
+  background: url('https://as2.ftcdn.net/v2/jpg/02/04/58/83/1000_F_204588304_UXqaTmopLgVYTjwFIFkauQXlrrt0x2WH.jpg'); 
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.contact button {
+  background-color: #430C05;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color:#93441A;
+}

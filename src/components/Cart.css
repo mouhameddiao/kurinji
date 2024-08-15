@@ -1,0 +1,41 @@
+.cart {
+    padding: 20px;
+  }
+  
+  .cart h2 {
+    font-weight: bold;
+  }
+  
+  .cart table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .cart th, .cart td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .cart th {
+    background-color: #f2f2f2;
+  }
+  
+  .cart-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .checkout-button, .clear-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .checkout-button:hover, .clear-button:hover {
+    background-color: #45a049;
+  }
+  
